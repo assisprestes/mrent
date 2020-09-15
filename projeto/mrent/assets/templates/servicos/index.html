@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Flexor Bootstrap Template - Index</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="{% static 'img/favicon.png' %}" rel="icon">
-  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Flexor - v2.2.0
-  * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-lg-block">
@@ -59,7 +24,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Flexor</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>MRENT</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="{% static 'img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -67,7 +32,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">Sobre</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
@@ -101,8 +66,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container" data-aos="fade-in">
-      <h1>Welcome to Flexor</h1>
-      <h2>We are team of talanted designers making websites with Bootstrap</h2>
+      <h1>Bem vindo ao MRENT</h1>
+      <h2>Realizamos Serviços de Manutenção Residencial e Comercial</h2>
       <div class="d-flex align-items-center">
         <i class="bx bxs-right-arrow-alt get-started-icon"></i>
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -119,13 +84,13 @@
         <div class="row">
           <div class="col-xl-4 col-lg-5" data-aos="fade-up">
             <div class="content">
-              <h3>Why Choose Flexor for your company website?</h3>
+              <h3>Porque escolher MRENT?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Oferecemos serviços de elétrica, hidráulica, marcenaria, instalações diversas e pequenos reparos em residências, comércios e empresas, sempre nos preocupando com o seu tempo e bem-estar.
+                Enviamos um profissional devidamente capacitado para realizar os serviços necessários, executando cada serviço e instalação de imediato com garantia de 15 dias.
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="#" class="more-btn">Mais <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -134,14 +99,14 @@
               <div class="row">
                 <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
+                    <i class="bx bx-wrench"></i>
                     <h4>Corporis voluptates sit</h4>
                     <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
+                    <i class="bx bx-paint-roll"></i>
                     <h4>Ullamco laboris ladore pan</h4>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                   </div>
@@ -171,9 +136,9 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h4 data-aos="fade-up">About us</h4>
-            <h3 data-aos="fade-up">Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p data-aos="fade-up">Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+            <h4 data-aos="fade-up">Sobre nós</h4>
+            <h3 data-aos="fade-up">Serviços de qualidade</h3>
+            <p data-aos="fade-up">Somos comprometidos em atender bem nossos clientes e garantimos bons resultados porque temos uma rede de profissionais bem qualificados, distribuída em todo País: pedreiros, encanadores, eletricistas, pintores, marceneiros e muitos outros. Confie os problemas de seu imóvel ao nosso time, e nós faremos o serviço rapidamente, com alta qualidade e segurança.</p>
 
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
@@ -222,51 +187,51 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Serviços</h2>
+          <p>Contamos com uma grande gama de profissionais prontos a resolver seus problemas.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-computer"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <div class="icon"><i class="icofont-tools-alt-2"></i></div>
+              <h4 class="title"><a href="">Eletricista</a></h4>
+              <p class="description">Oferecemos serviços de manutenções e instalações  elétricas em geral</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <div class="icon"><i class="icofont-safety-hat"></i></div>
+              <h4 class="title"><a href="">Encanador</a></h4>
+              <p class="description">Serviços hidráulicos em geral, reparos de vazamentos, desimtupimentos, troca de torneiras, vasos sanitários</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-earth"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <div class="icon"><i class="icofont-drill"></i></div>
+              <h4 class="title"><a href="">Ar Condicionado</a></h4>
+              <p class="description">Instalação de aparelhos de ar condicionado, manutenção, limpeza, regulagem, contrato para empresas e prédios.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-image"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div class="icon"><i class="icofont-trowel"></i></div>
+              <h4 class="title"><a href="">Manutenções e Reformas</a></h4>
+              <p class="description">Retoques de alvenaria, piso, azulejos, papel de parede, corrimão, olho mágico, portas e janelas</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-settings"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <div class="icon"><i class="icofont-ui-theme"></i></div>
+              <h4 class="title"><a href="">Pintura e Dry Wall</a></h4>
+              <p class="description">Serviços de pinturas em casas, apartamentos e prédios, montagem de drywall, manutenção e projeto.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-tasks-alt"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="icon"><i class="icofont-wrench"></i></div>
+              <h4 class="title"><a href="">Instalações em Geral</a></h4>
+              <p class="description">Instalação de exaustores, varais, roteadores, repetidores e cabeamento de internet, ventiladores de teto e outros equipamentos residênciais</p>
             </div>
           </div>
         </div>
@@ -811,98 +776,5 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Flexor</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-lg-flex py-4">
-
-      <div class="mr-lg-auto text-center text-lg-left">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Flexor</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
-  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
-  <script src="{% static 'vendor/jquery-sticky/jquery.sticky.js' %}"></script>
-  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
-  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'vendor/aos/aos.js' %}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{% static 'js/main.js' %}"></script>
-
-</body>
-
-</html>
+    {% include 'partials/footer.html' %}
+{% endblock %}
