@@ -1,5 +1,4 @@
 https://mrent1.herokuapp.com/ | https://git.heroku.com/mrent1.git
-
 heroku git:remote -a mrent1
 git add .
 git commit -m "First commit"
