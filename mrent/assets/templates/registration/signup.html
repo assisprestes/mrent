@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Crie uma conta e aproveite nossos serviços</h2>
+  <p class="lead">Selecione abaixo o tipo de conta que você deseja criar</p>
+  <a href="{% url 'marido_signup' %}" class="btn btn-marido btn-lg" role="button">Eu sou Marido de Aluguel</a>
+  <a href="{% url 'contratante_signup' %}" class="btn btn-contratante btn-lg" role="button">Eu sou Contratante</a>
+{% endblock %}
