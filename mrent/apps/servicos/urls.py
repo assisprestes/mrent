@@ -11,6 +11,7 @@ urlpatterns = [
         path('taken/', marido.TakenQuizListView.as_view(), name='taken_quiz_list'),
         path('quiz/<int:pk>/', marido.take_quiz, name='take_quiz'),
     ], 'servicos'), namespace='marido')),
+    path('maridodealuguel', servicos.maridodealuguel, name='maridodealuguel'),
 
     path('contratante/', include(([
         path('', contratante.QuizListView.as_view(), name='quiz_change_list'),

@@ -13,3 +13,6 @@ def home(request):
         else:
             return redirect('marido:quiz_list')
     return render(request, 'servicos/index.html')
+
+def maridodealuguel(request):
+    return render(request, 'maridodealuguel/maridodealuguel.html')
