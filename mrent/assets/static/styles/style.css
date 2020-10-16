@@ -2675,9 +2675,9 @@ button.dim:active:before {
     text-decoration: none;
 }
 
-.page-item.active .page-link {
-    background-color: #1ab394;
-    border-color: #1ab394;
+.page-item.active {
+    background-color: #ff5821;
+    border-color: #ff5821;
 }
 
 .page-link:focus {
@@ -11398,8 +11398,38 @@ body.skin-3 {
     color: white;
 }
 
-.page-item .active {
+.page-item.active .page-link {
     background: #ff5821;
+    border-color: #ff5821;
+}
+
+div .filters {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+div .filters #label-prices {
+    font-size: 1.2em;
+    margin: 15px 0px 5px;
+}
+
+#input-filters {
+    align-self: flex-end;
+    display: flex;
+    height: 38px;
+    margin-bottom: 14px;
+}
+
+textarea {
+    background: none;
+    border: none;
+    color: #676a6c;
+    font-weight: 400;
+    height: 3.5rem;
+    margin: 5px 0px;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 
